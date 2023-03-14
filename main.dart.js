@@ -10095,7 +10095,7 @@ this.b=b},
 oH:function oH(a,b){this.a=a
 this.b=b},
 bhc(){var s=null
-return new A.ad8(A.bkn(new A.ad9(),A.a([A.yE(new A.ada(),"home",s,"/",new A.adb()),A.yE(new A.adc(),"login",s,"/login",s),A.yE(new A.add(),"signUp",s,"/signUo",s),A.yE(new A.ade(),"dashboard",s,"/dashboard",s),A.yE(new A.adf(),"cardScreen",s,"/cardScreen:userId",s),A.yE(new A.adg(),"shareQRCodeScreen",s,"/shareQRCodeScreen",s)],t.yo)))},
+return new A.ad8(A.bkn(new A.ad9(),A.a([A.yE(new A.ada(),"home",s,"/",new A.adb()),A.yE(new A.adc(),"login",s,"/login",s),A.yE(new A.add(),"signUp",s,"/signUo",s),A.yE(new A.ade(),"dashboard",s,"/dashboard",s),A.yE(new A.adf(),"cardScreen",s,"/cardScreen/:userId",s),A.yE(new A.adg(),"shareQRCodeScreen",s,"/shareQRCodeScreen",s)],t.yo)))},
 aWt:function aWt(){},
 ad8:function ad8(a){this.a=a},
 ada:function ada(){},
@@ -10593,7 +10593,7 @@ amh(a,b,c){var s=0,r=A.v(t.H),q
 var $async$amh=A.q(function(d,e){if(d===1)return A.r(e,r)
 while(true)switch(s){case 0:q=$.Qf()
 s=2
-return A.p(A.BZ(q,q.gnB().kv(a)).ii(0,b).kv("/subCollection").a0a(0).Qj(0,c).af(0,new A.ami(),t.P),$async$amh)
+return A.p(A.BZ(q,q.gnB().kv(a)).ii(0,b).kv("subCollection").a0a(0).Qj(0,c).af(0,new A.ami(),t.P),$async$amh)
 case 2:return A.t(null,r)}})
 return A.u($async$amh,r)},
 amj(a,b,c){return A.bjU(a,b,c)},
@@ -54363,9 +54363,7 @@ A.ade.prototype={
 $2(a,b){return B.nt},
 $S:433}
 A.adf.prototype={
-$2(a,b){var s=b.r
-s.j(0)
-return new A.tD(B.f1,!0,s.h(0,"userId"),null)},
+$2(a,b){return new A.tD(B.f1,!0,b.r.h(0,"userId"),null)},
 $S:435}
 A.adg.prototype={
 $2(a,b){return B.BC},
@@ -55766,7 +55764,7 @@ A.aIg.prototype={
 $3(a2,a3,a4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0=null,a1=a3.l5($.b2X(),t.Oc)
 a1.r5()
 s=a1.a
-A.amj("users",J.a9(s.gdQ(s).a.c,"uid"),"/subCollection")
+A.amj("users",J.a9(s.gdQ(s).a.c,"uid"),"subCollection")
 s=this.a
 s.as=!1
 r=a1.d
@@ -55951,7 +55949,7 @@ q=A.a6(["userId",A.d(this.b.y.ax)],q,q)
 s=this.a.a8(t.q0).x
 r=s.b
 r===$&&A.b()
-q=r.a.aBt("shareQRCodeScreen",q,B.l0)
+q=r.a.aBt("cardScreen",q,B.l0)
 s=s.d
 s===$&&A.b()
 s.sm(0,new A.hw(q,null))},
